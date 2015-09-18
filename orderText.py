@@ -2,9 +2,9 @@ def test():
   print('hello')
   return
 
-def removeDuplicates(list):
-  print(list)
-  unique=set(list)
-  newList=list(newList)
+def removeDuplicates(dataList):
+  print(dataList)
+  unique=set(dataList)
+  newList=list(unique)
   print(newList)
   return

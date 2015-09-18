@@ -4,6 +4,7 @@ def test():
 
 def removeDuplicates(list):
   print(list)
-  newList=set(list)
+  unique=set(list)
+  newList=list(newList)
   print(newList)
   return

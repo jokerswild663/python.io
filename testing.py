@@ -1,3 +1,5 @@
 import sys
-print(sys.version)
+import pandas as pd
 
+print(sys.version)
+pd.show_versions(as_json=False)

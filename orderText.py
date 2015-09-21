@@ -14,8 +14,9 @@ def readText(filePath):
 
   for line in fileLines:
     print(line)
-    dataFromFile.append(str(line).strip())
-  
+    word=str(line).strip().split(",")
+    dataFromFile+=word
+
   print(dataFromFile)
   return
 

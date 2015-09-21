@@ -16,7 +16,5 @@ def readText(filePath):
     print(line)
     word=str(line).strip().split(",")
     dataFromFile+=word
-
-  print(dataFromFile)
-  return
-
+  
+  return dataFromFile

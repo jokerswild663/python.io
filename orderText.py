@@ -9,5 +9,9 @@ def removeDuplicates(dataList):
 
 def readText(filePath):
   fileObject=open(filePath,'r')
-  print(fileObject.read())
+  fileLines=fileObject.readlines()
+
+  for line in fileLines:
+    print(line)
   return
+

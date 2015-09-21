@@ -9,12 +9,12 @@ def removeDuplicates(dataList):
 
 def readText(filePath):
   dataFromFile=[]
-  fileObject=open(filePath,'r')
-  fileLines=fileObject.readlines()
-
-  for line in fileLines:
-    print(line)
-    word=str(line).strip().split(",")
-    dataFromFile+=word
-  
-  return dataFromFile
+  with open(filePath,'r') as fileObject:
+    fileLines=fileObject.readlines()
+    
+    for line in fileLines:
+      print(line)
+      word=str(line).strip().split(",")
+      dataFromFile+=word
+    
+    return dataFromFile

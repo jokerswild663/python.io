@@ -8,10 +8,14 @@ def removeDuplicates(dataList):
   return newList
 
 def readText(filePath):
+  dataFromFile=[]
   fileObject=open(filePath,'r')
   fileLines=fileObject.readlines()
 
   for line in fileLines:
     print(line)
+    dataFromFile.append(str(line).strip())
+  
+  print(dataFromFile)
   return
 
